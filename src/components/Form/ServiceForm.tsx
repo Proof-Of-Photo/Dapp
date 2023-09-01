@@ -22,7 +22,8 @@ import { useConfig } from '../../hooks/useConfig';
 interface IFormValues {
   title: string;
   about: string;
-  keywords: string;
+  latitude: number;
+  longitude: number;
   rateToken: string;
   rateAmount: number;
 }
@@ -30,7 +31,8 @@ interface IFormValues {
 const initialValues: IFormValues = {
   title: '',
   about: '',
-  keywords: '',
+  latitude: 0,
+  longitude: 0,
   rateToken: '',
   rateAmount: 0,
 };
@@ -52,12 +54,13 @@ function ServiceForm() {
   const { isActiveDelegate } = useContext(StarterKitContext);
 
   const validationSchema = Yup.object({
-    title: Yup.string().required('Please provide a title for your service'),
-    about: Yup.string().required('Please provide a description of your service'),
-    keywords: Yup.string().required('Please provide keywords for your service'),
+    title: Yup.string().required('Please provide a title for your image'),
+    about: Yup.string().required('Please provide a description of your image'),
+    latitude: Yup.number().required('Please provide latitude'),
+    longitude: Yup.number().required('Please provide longitude'),
     rateToken: Yup.string().required('Please select a payment token'),
     rateAmount: Yup.number()
-      .required('Please provide an amount for your service')
+      .required('Please provide an amount for your image')
       .when('rateToken', {
         is: (rateToken: string) => rateToken !== '',
         then: schema =>
@@ -104,7 +107,8 @@ function ServiceForm() {
           JSON.stringify({
             title: values.title,
             about: values.about,
-            keywords: values.keywords,
+            latitude: values.latitude,
+            longitude: values.longitude,
             role: 'buyer',
             rateToken: values.rateToken,
             rateAmount: parsedRateAmountString,
@@ -192,13 +196,34 @@ function ServiceForm() {
               </span>
             </label>
 
-            <label className='block'>
-              <span className='text-gray-100'>Keywords</span>
-
-              <SkillsInput entityId={'keywords'} />
-
-              <Field type='hidden' id='keywords' name='keywords' />
-            </label>
+            <div className='flex'>
+              <label className='block flex-1 mr-4'>
+                <span className='text-gray-100'>Latitude</span>
+                <Field
+                  type='number'
+                  id='latitude'
+                  name='latitude'
+                  className='mt-1 mb-1 block w-full rounded-xl border border-gray-700 bg-midnight shadow-sm focus:ring-opacity-50'
+                  placeholder=''
+                />
+                <span className='text-red-500 mt-2'>
+                  <ErrorMessage name='latitude' />
+                </span>
+              </label>
+              <label className='block flex-1 mr-4'>
+                <span className='text-gray-100'>Longitude</span>
+                <Field
+                  type='number'
+                  id='longitude'
+                  name='longitude'
+                  className='mt-1 mb-1 block w-full rounded-xl border border-gray-700 bg-midnight shadow-sm focus:ring-opacity-50'
+                  placeholder=''
+                />
+                <span className='text-red-500 mt-2'>
+                  <ErrorMessage name='longitude' />
+                </span>
+              </label>
+            </div>
 
             <div className='flex'>
               <label className='block flex-1 mr-4'>
