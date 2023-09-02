@@ -1,11 +1,11 @@
+import Image from 'next/image';
+import { useState } from 'react';
 import {
   BanknotesIcon,
   BriefcaseIcon,
   ChatBubbleBottomCenterTextIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
-import Image from 'next/image';
-import { useState } from 'react';
 
 function Home() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -112,7 +112,7 @@ function Home() {
                     people
                   </h1>
                   <p className='mb-10 max-w-[475px] text-base leading-relaxed text-body'>
-                    Proof of Photo helps people earn from sharing real photos with the news
+                    Proof of Picture helps people earn from sharing real photos with the news
                     organizations that need them the most
                   </p>
 
@@ -187,94 +187,6 @@ function Home() {
           </div>
         </section>
 
-        <section id='about' className='relative pt-[150px]'>
-          <div className='container lg:max-w-[1120px]'>
-            <div>
-              <div className='-mx-4 flex flex-wrap items-center justify-between'>
-                <div className='w-full px-4 lg:w-1/2'>
-                  <div
-                    className='wow fadeInUp relative z-10 mx-auto mb-14 w-full max-w-[470px] pb-6 lg:mx-0 lg:mb-0'
-                    data-wow-delay='.2s'>
-                    <img
-                      src='/images/home/about/about-1-light.png'
-                      alt='about image'
-                      className='mx-auto max-w-full'
-                    />
-                  </div>
-                </div>
-
-                <div className='w-full px-4 lg:w-1/2'>
-                  <div className='wow fadeInUp lg:ml-auto lg:max-w-[510px]' data-wow-delay='.3s'>
-                    <h2 className='mb-4 text-3xl font-bold text-black  sm:text-4xl md:text-[44px] md:leading-tight'>
-                      powerful tools for authenticating the truth
-                    </h2>
-                    <div className='mb-[30px] flex items-center'>
-                      <div className='shrink-0 mr-3 flex h-[60px] w-[60px] items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black text-center '>
-                        01
-                      </div>
-                      <div>
-                        <h5 className='text-xl font-medium text-black '>
-                          combating AI-based misinformation campaigns
-                        </h5>
-                        <p className='text-base text-body'>
-                          it's now easier than ever to create images that evidence fake events or
-                          inaccurate depictions of the truth. AI has caused us to question our
-                          reality in a way that we didn't have to before - this has caused many
-                          issues for news organizations. many major publications have been caught
-                          accidentally posting images that were creted or doctored by AI. now, with
-                          Proof of Photo, publications can guarantee that photos were not doctored,
-                          regardless of their origin.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className='flex items-center'>
-                      <div className='shrink-0 mr-3 flex h-[60px] w-[60px] items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black  '>
-                        02
-                      </div>
-                      <div>
-                        <h5 className='text-xl font-medium text-black '>
-                          empowering activist reporting
-                        </h5>
-                        <p className='text-base text-body'>
-                          in the past, it was hard for publications to accept photographs taken by
-                          reporters that the publication didn't have a prior relationship with. this
-                          is because the authenticity of photos was difficult to proove. now,
-                          publications can accept images from anyone thanks to C2PA technology and
-                          Proof of Photo.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className='absolute right-0 top-36 -z-10'>
-            <svg
-              width='95'
-              height='190'
-              viewBox='0 0 95 190'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'>
-              <circle cx='95' cy='95' r='77' stroke='url(#paint0_linear_47_27)' strokeWidth='36' />
-              <defs>
-                <linearGradient
-                  id='paint0_linear_47_27'
-                  x1='0'
-                  y1='0'
-                  x2='224.623'
-                  y2='130.324'
-                  gradientUnits='userSpaceOnUse'>
-                  <stop stopColor='#FF8FE8' />
-                  <stop offset='1' stopColor='#FFC960' />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-        </section>
-
         <section id='features' className='relative z-10 pt-[110px]'>
           <div className='container'>
             <div
@@ -289,7 +201,7 @@ function Home() {
                 the marketplace empowering organizations to source and validate hard-to-get images
               </h2>
               <p className='text-base text-body'>
-                Proof of Photo is a marketplace where news organizations can request photos of
+                Proof of Picture is a marketplace where news organizations can request photos of
                 specific events, local photographers can upload and verify images - earning from
                 each photo they submit.
               </p>
@@ -441,6 +353,94 @@ function Home() {
           </div>
         </section>
 
+        <section id='about' className='relative pt-[150px]'>
+          <div className='container lg:max-w-[1120px]'>
+            <div>
+              <div className='-mx-4 flex flex-wrap items-center justify-between'>
+                <div className='w-full px-4 lg:w-1/2'>
+                  <div
+                    className='wow fadeInUp relative z-10 mx-auto mb-14 w-full max-w-[470px] pb-6 lg:mx-0 lg:mb-0'
+                    data-wow-delay='.2s'>
+                    <img
+                      src='/about-1-light.png'
+                      alt='about image'
+                      className='mx-auto max-w-full'
+                    />
+                  </div>
+                </div>
+
+                <div className='w-full px-4 lg:w-1/2'>
+                  <div className='wow fadeInUp lg:ml-auto lg:max-w-[510px]' data-wow-delay='.3s'>
+                    <h2 className='mb-4 text-3xl font-bold text-black  sm:text-4xl md:text-[44px] md:leading-tight'>
+                      powerful tools for authenticating the truth
+                    </h2>
+                    <div className='mb-[30px] flex items-center'>
+                      <div className='shrink-0 mr-3 flex h-[60px] w-[60px] items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black text-center '>
+                        01
+                      </div>
+                      <div>
+                        <h5 className='text-xl font-medium text-black '>
+                          combating AI-based misinformation campaigns
+                        </h5>
+                        <p className='text-base text-body'>
+                          it's now easier than ever to create images that evidence fake events or
+                          inaccurate depictions of the truth. AI has caused us to question our
+                          reality in a way that we didn't have to before - this has caused many
+                          issues for news organizations. many major publications have been caught
+                          accidentally posting images that were creted or doctored by AI. now, with
+                          Proof of Picture, publications can guarantee that photos were not
+                          doctored, regardless of their origin.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className='flex items-center'>
+                      <div className='shrink-0 mr-3 flex h-[60px] w-[60px] items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black  '>
+                        02
+                      </div>
+                      <div>
+                        <h5 className='text-xl font-medium text-black '>
+                          empowering activist reporting
+                        </h5>
+                        <p className='text-base text-body'>
+                          in the past, it was hard for publications to accept photographs taken by
+                          reporters that the publication didn't have a prior relationship with. this
+                          is because the authenticity of photos was difficult to proove. now,
+                          publications can accept images from anyone thanks to C2PA technology and
+                          Proof of Picture.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='absolute right-0 top-36 -z-10'>
+            <svg
+              width='95'
+              height='190'
+              viewBox='0 0 95 190'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'>
+              <circle cx='95' cy='95' r='77' stroke='url(#paint0_linear_47_27)' strokeWidth='36' />
+              <defs>
+                <linearGradient
+                  id='paint0_linear_47_27'
+                  x1='0'
+                  y1='0'
+                  x2='224.623'
+                  y2='130.324'
+                  gradientUnits='userSpaceOnUse'>
+                  <stop stopColor='#FF8FE8' />
+                  <stop offset='1' stopColor='#FFC960' />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </section>
+
         <section id='work-process' className='relative z-10 pt-[110px]'>
           <div className='container'>
             <div
@@ -461,7 +461,7 @@ function Home() {
                     data-wow-delay='.2s'>
                     <div className='mx-auto mb-8 flex h-[90px] w-[90px] items-center justify-center rounded-3xl bg-redpraha bg-opacity-20 text-redpraha duration-300 group-hover:bg-redpraha group-hover:text-white   '>
                       <img
-                        src='/logo.png'
+                        src='/request-logo.png'
                         alt='author'
                         className='h-full w-full object-cover object-center'
                       />
@@ -508,7 +508,7 @@ function Home() {
                     data-wow-delay='.4s'>
                     <div className='mx-auto mb-8 flex h-[90px] w-[90px] items-center justify-center rounded-3xl bg-redpraha bg-opacity-20 text-redpraha duration-300 group-hover:bg-redpraha group-hover:text-white   '>
                       <img
-                        src='/logo.png'
+                        src='/tl-logo.png'
                         alt='author'
                         className='h-full w-full object-cover object-center'
                       />
@@ -617,341 +617,52 @@ function Home() {
             <div
               className='wow fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]'
               data-wow-delay='.2s'>
-              <h2 className='mb-4 text-3xl font-bold text-black  sm:text-4xl md:text-[44px] md:leading-tight'>
-                What Dev's Say
+              <h1 className='mb-6 text-5xl font-bold leading-tight text-black  sm:text-[50px] md:text-[70px] lg:text-[52px] xl:text-[60px]'>
+                how do we know what's{' '}
+                <span className='inline bg-redpraha bg-clip-text text-transparent'>authentic</span>
+                and what's
+                <span className='inline bg-redpraha bg-clip-text text-transparent mx-2'>fake</span>
+                in the age of AI?
+              </h1>
+              <div
+                className='wow fadeInUp relative mx-auto mb-5 w-full max-w-[530px]'
+                data-wow-delay='.3s'>
+                <img src='/pope.png' alt='hero image' className='mx-auto max-w-full' />
+              </div>
+              <h2 className='mb-4 text-3xl font-bold text-redpraha  sm:text-4xl md:text-[44px] md:leading-tight'>
+                the mysterious case of the fake pope
               </h2>
               <p className='text-base text-body'>
-                We highly value feedback from our users as it plays a crucial role in enhancing our
-                starter kit, refining the user experience, and continuously improving the features
-                and functionality to meet the evolving needs of our community.
+                In August, 2023, Matt, an organizer of ETH Warsaw posted an AI-generated picture of
+                the Pope on Twitter. It quickly became popular on Twitter and began getting
+                re-posted by various Catholic facebook groups as authentic. Matt was later
+                approached by the media to inquire into the authenticity of the photo. As AI
+                technology matures, it will get harder and harder for media and individuals alike to
+                determine what's fake and what's real.
               </p>
-            </div>
-          </div>
-
-          <div className='container overflow-hidden lg:max-w-[1160px]'>
-            <div className='-mx-6 flex flex-wrap'>
-              <div className='w-full px-6 lg:w-1/2'>
-                <div
-                  className='wow fadeInUp mb-[50px] rounded-lg bg-white py-9 px-7 shadow-md sm:px-9 lg:px-7 xl:px-9'
-                  data-wow-delay='.2s'>
-                  <div className='mb-5 border-b border-stroke'>
-                    <p className='pb-9 text-base text-body'>
-                      The integration process of the TalentLayer and XMTP protocols was seamless
-                      using your starter kit. It saved us a significant amount of time and effort,
-                      allowing us to focus more on building unique features for our dapp. The
-                      documentation provided was clear and comprehensive, making it easy for our
-                      development team to understand and utilize the kit effectively.
-                    </p>
-                  </div>
-
-                  <div className='items-center justify-between sm:flex lg:block xl:flex'>
-                    <div className='mb-4 flex items-center sm:mb-0 lg:mb-4 xl:mb-0'>
-                      <div className='mr-4 h-[56px] w-full max-w-[56px] rounded-full'>
-                        <img
-                          src='/images/home/testimonials/author-1.png'
-                          alt='author'
-                          className='h-full w-full object-cover object-center'
-                        />
-                      </div>
-                      <div>
-                        <h5 className='text-base font-medium text-black '>Martin</h5>
-                        <p className='text-sm text-body'>Fullstack dev</p>
-                      </div>
-                    </div>
-
-                    <div className='flex items-center space-x-3 sm:justify-end lg:justify-start xl:justify-end'>
-                      <p className='text-base font-medium text-black '>5.0</p>
-                      <div className='flex items-center space-x-[6px]'>
-                        <span>
-                          <svg
-                            width='20'
-                            height='20'
-                            viewBox='0 0 20 20'
-                            fill='none'
-                            xmlns='http://www.w3.org/2000/svg'>
-                            <g clipPath='url(#clip0_49_480)'>
-                              <path
-                                d='M10 15.2171L4.1225 18.5071L5.435 11.9004L0.489166 7.32712L7.17833 6.53378L10 0.417114L12.8217 6.53378L19.5108 7.32712L14.565 11.9004L15.8775 18.5071L10 15.2171Z'
-                                fill='#EABF23'
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id='clip0_49_480'>
-                                <rect
-                                  width='20'
-                                  height='20'
-                                  fill='white'
-                                  transform='translate(0 0.000488281)'
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                        <span>
-                          <svg
-                            width='20'
-                            height='20'
-                            viewBox='0 0 20 20'
-                            fill='none'
-                            xmlns='http://www.w3.org/2000/svg'>
-                            <g clipPath='url(#clip0_49_480)'>
-                              <path
-                                d='M10 15.2171L4.1225 18.5071L5.435 11.9004L0.489166 7.32712L7.17833 6.53378L10 0.417114L12.8217 6.53378L19.5108 7.32712L14.565 11.9004L15.8775 18.5071L10 15.2171Z'
-                                fill='#EABF23'
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id='clip0_49_480'>
-                                <rect
-                                  width='20'
-                                  height='20'
-                                  fill='white'
-                                  transform='translate(0 0.000488281)'
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                        <span>
-                          <svg
-                            width='20'
-                            height='20'
-                            viewBox='0 0 20 20'
-                            fill='none'
-                            xmlns='http://www.w3.org/2000/svg'>
-                            <g clipPath='url(#clip0_49_480)'>
-                              <path
-                                d='M10 15.2171L4.1225 18.5071L5.435 11.9004L0.489166 7.32712L7.17833 6.53378L10 0.417114L12.8217 6.53378L19.5108 7.32712L14.565 11.9004L15.8775 18.5071L10 15.2171Z'
-                                fill='#EABF23'
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id='clip0_49_480'>
-                                <rect
-                                  width='20'
-                                  height='20'
-                                  fill='white'
-                                  transform='translate(0 0.000488281)'
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                        <span>
-                          <svg
-                            width='20'
-                            height='20'
-                            viewBox='0 0 20 20'
-                            fill='none'
-                            xmlns='http://www.w3.org/2000/svg'>
-                            <g clipPath='url(#clip0_49_480)'>
-                              <path
-                                d='M10 15.2171L4.1225 18.5071L5.435 11.9004L0.489166 7.32712L7.17833 6.53378L10 0.417114L12.8217 6.53378L19.5108 7.32712L14.565 11.9004L15.8775 18.5071L10 15.2171Z'
-                                fill='#EABF23'
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id='clip0_49_480'>
-                                <rect
-                                  width='20'
-                                  height='20'
-                                  fill='white'
-                                  transform='translate(0 0.000488281)'
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                        <span>
-                          <svg
-                            width='20'
-                            height='20'
-                            viewBox='0 0 20 20'
-                            fill='none'
-                            xmlns='http://www.w3.org/2000/svg'>
-                            <g clipPath='url(#clip0_49_480)'>
-                              <path
-                                d='M10 15.2171L4.1225 18.5071L5.435 11.9004L0.489166 7.32712L7.17833 6.53378L10 0.417114L12.8217 6.53378L19.5108 7.32712L14.565 11.9004L15.8775 18.5071L10 15.2171Z'
-                                fill='#EABF23'
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id='clip0_49_480'>
-                                <rect
-                                  width='20'
-                                  height='20'
-                                  fill='white'
-                                  transform='translate(0 0.000488281)'
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+              <div
+                className='wow fadeInUp mb-[50px] rounded-lg bg-white py-9 px-7 shadow-md sm:px-9 lg:px-7 xl:px-9'
+                data-wow-delay='.2s'>
+                <div className='mb-5 border-b border-stroke'>
+                  <p className='pb-9 text-base text-body  sm:text-[20px] md:text-[20px] lg:text-[20px] xl:text-[20px]'>
+                    "Yea, I just like posted the AI pope picture to social media, then a bunch of
+                    facebook groups picked it up and it went viral. All those people thought it was
+                    real."
+                  </p>
                 </div>
-              </div>
 
-              <div className='w-full px-6 lg:w-1/2'>
-                <div
-                  className='wow fadeInUp mb-[50px] rounded-lg bg-white py-9 px-7 shadow-md sm:px-9 lg:px-7 xl:px-9'
-                  data-wow-delay='.3s'>
-                  <div className='mb-5 border-b border-stroke'>
-                    <p className='pb-9 text-base text-body'>
-                      We appreciate the value-added features included in your starter kit. The
-                      pre-built components and streamlined development environment made it simple to
-                      create a great dapp experience quickly. Additionally, the responsiveness of
-                      your support team in addressing our queries and providing guidance was
-                      outstanding. <br />
-                      Thank you :)
-                    </p>
-                  </div>
-
-                  <div className='items-center justify-between sm:flex lg:block xl:flex'>
-                    <div className='mb-4 flex items-center sm:mb-0 lg:mb-4 xl:mb-0'>
-                      <div className='mr-4 h-[56px] w-full max-w-[56px] rounded-full'>
-                        <img
-                          src='/images/home/testimonials/author-2.png'
-                          alt='author'
-                          className='h-full w-full object-cover object-center'
-                        />
-                      </div>
-                      <div>
-                        <h5 className='text-base font-medium text-black '>Tonio</h5>
-                        <p className='text-sm text-body'>Entreprener</p>
-                      </div>
+                <div className='items-center justify-between sm:flex lg:block xl:flex'>
+                  <div className='mb-4 flex items-center sm:mb-0 lg:mb-4 xl:mb-0'>
+                    <div className='mr-4 h-[56px] w-full max-w-[56px] rounded-full'>
+                      <img
+                        src='/matt.jpeg'
+                        alt='author'
+                        className='h-full w-full object-cover object-center'
+                      />
                     </div>
-
-                    <div className='flex items-center space-x-3 sm:justify-end lg:justify-start xl:justify-end'>
-                      <p className='text-base font-medium text-black '>5.0</p>
-                      <div className='flex items-center space-x-[6px]'>
-                        <span>
-                          <svg
-                            width='20'
-                            height='20'
-                            viewBox='0 0 20 20'
-                            fill='none'
-                            xmlns='http://www.w3.org/2000/svg'>
-                            <g clipPath='url(#clip0_49_480)'>
-                              <path
-                                d='M10 15.2171L4.1225 18.5071L5.435 11.9004L0.489166 7.32712L7.17833 6.53378L10 0.417114L12.8217 6.53378L19.5108 7.32712L14.565 11.9004L15.8775 18.5071L10 15.2171Z'
-                                fill='#EABF23'
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id='clip0_49_480'>
-                                <rect
-                                  width='20'
-                                  height='20'
-                                  fill='white'
-                                  transform='translate(0 0.000488281)'
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                        <span>
-                          <svg
-                            width='20'
-                            height='20'
-                            viewBox='0 0 20 20'
-                            fill='none'
-                            xmlns='http://www.w3.org/2000/svg'>
-                            <g clipPath='url(#clip0_49_480)'>
-                              <path
-                                d='M10 15.2171L4.1225 18.5071L5.435 11.9004L0.489166 7.32712L7.17833 6.53378L10 0.417114L12.8217 6.53378L19.5108 7.32712L14.565 11.9004L15.8775 18.5071L10 15.2171Z'
-                                fill='#EABF23'
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id='clip0_49_480'>
-                                <rect
-                                  width='20'
-                                  height='20'
-                                  fill='white'
-                                  transform='translate(0 0.000488281)'
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                        <span>
-                          <svg
-                            width='20'
-                            height='20'
-                            viewBox='0 0 20 20'
-                            fill='none'
-                            xmlns='http://www.w3.org/2000/svg'>
-                            <g clipPath='url(#clip0_49_480)'>
-                              <path
-                                d='M10 15.2171L4.1225 18.5071L5.435 11.9004L0.489166 7.32712L7.17833 6.53378L10 0.417114L12.8217 6.53378L19.5108 7.32712L14.565 11.9004L15.8775 18.5071L10 15.2171Z'
-                                fill='#EABF23'
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id='clip0_49_480'>
-                                <rect
-                                  width='20'
-                                  height='20'
-                                  fill='white'
-                                  transform='translate(0 0.000488281)'
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                        <span>
-                          <svg
-                            width='20'
-                            height='20'
-                            viewBox='0 0 20 20'
-                            fill='none'
-                            xmlns='http://www.w3.org/2000/svg'>
-                            <g clipPath='url(#clip0_49_480)'>
-                              <path
-                                d='M10 15.2171L4.1225 18.5071L5.435 11.9004L0.489166 7.32712L7.17833 6.53378L10 0.417114L12.8217 6.53378L19.5108 7.32712L14.565 11.9004L15.8775 18.5071L10 15.2171Z'
-                                fill='#EABF23'
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id='clip0_49_480'>
-                                <rect
-                                  width='20'
-                                  height='20'
-                                  fill='white'
-                                  transform='translate(0 0.000488281)'
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                        <span>
-                          <svg
-                            width='20'
-                            height='20'
-                            viewBox='0 0 20 20'
-                            fill='none'
-                            xmlns='http://www.w3.org/2000/svg'>
-                            <g clipPath='url(#clip0_49_480)'>
-                              <path
-                                d='M10 15.2171L4.1225 18.5071L5.435 11.9004L0.489166 7.32712L7.17833 6.53378L10 0.417114L12.8217 6.53378L19.5108 7.32712L14.565 11.9004L15.8775 18.5071L10 15.2171Z'
-                                fill='#EABF23'
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id='clip0_49_480'>
-                                <rect
-                                  width='20'
-                                  height='20'
-                                  fill='white'
-                                  transform='translate(0 0.000488281)'
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                      </div>
+                    <div>
+                      <h5 className='text-base font-medium text-black '>Matt</h5>
+                      <p className='text-sm text-body'>Organizer, ETH Warsaw</p>
                     </div>
                   </div>
                 </div>
@@ -965,115 +676,22 @@ function Home() {
             <div
               className='wow fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]'
               data-wow-delay='.2s'>
-              <h2 className='mb-4 text-3xl font-bold text-black  sm:text-4xl md:text-[44px] md:leading-tight'>
-                Frequently Asked Questions
+              <div
+                className='wow fadeInUp relative mx-auto mb-20 w-full max-w-[530px]'
+                data-wow-delay='.3s'>
+                <img src='/c2pa-logo.png' alt='hero image' className='mx-auto max-w-full' />
+              </div>
+              <h2 className='mb-4 mt-10 text-3xl font-bold text-black  sm:text-4xl md:text-[44px] md:leading-tight'>
+                Proof of Photo is one of the first open-source implementations of C2PA photo
+                authenticity technology
               </h2>
-              <p className='text-base text-body'>
-                Find answers to commonly asked questions about our Next.js starter kit for
-                TalentLayer and XMTP integration, helping you navigate through the implementation
-                process and make the most out of the powerful features provided.
-              </p>
+              <a
+                target='_blank'
+                href='https://c2pa.org/'
+                className='mr-6 mt-10 mb-6 inline-flex h-[60px] items-center rounded-lg bg-redpraha py-[14px] px-[30px] text-white hover:bg-opacity-90'>
+                Learn about C2PA
+              </a>
             </div>
-
-            <div
-              className='faqs wow fadeInUp mx-auto w-full max-w-[785px] rounded-lg bg-white px-6 py-[6px] shadow-car'
-              data-wow-delay='.3s'>
-              <div className='faq border-b border-stroke last-of-type:border-none'>
-                <button className='faq-btn relative flex w-full justify-between pt-6 pb-1 px-[18px] text-left text-base font-medium text-black  sm:px-[26px] sm:text-lg'>
-                  Are there any specific requirements or dependencies for using the starter kit?
-                </button>
-                <div className='pb-4 h-auto overflow-hidden px-[18px] sm:px-[26px]'>
-                  <p className='text-base text-body'>Just NodeJS & npm</p>
-                </div>
-              </div>
-
-              <div className='faq border-b border-stroke last-of-type:border-none'>
-                <button className='faq-btn relative flex w-full justify-between pt-6 pb-1 px-[18px] text-left text-base font-medium text-black  sm:px-[26px] sm:text-lg'>
-                  Do I need an admin account for XMTP?
-                </button>
-                <div className='pb-4 h-auto overflow-hidden px-[18px] sm:px-[26px]'>
-                  <p className='text-base text-body'>
-                    No, you do not need an admin account to use XMTP. The XMTP protocol is designed
-                    to be plug and play, allowing users to seamlessly integrate and utilize its
-                    functionality without the need for an admin account.
-                  </p>
-                </div>
-              </div>
-
-              <div className='faq border-b border-stroke last-of-type:border-none'>
-                <button className='faq-btn relative flex w-full justify-between pt-6 pb-1 px-[18px] text-left text-base font-medium text-black  sm:px-[26px] sm:text-lg'>
-                  Can I extend the review system to include additional criteria or metrics?
-                </button>
-                <div className='pb-4 h-auto overflow-hidden px-[18px] sm:px-[26px]'>
-                  <p className='text-base text-body'>
-                    Yes, TalentLayer the minimum viable for interoperability. You can add any other
-                    fields in the IPFS json linked to a review. This is also the case for user
-                    profile and service data.
-                  </p>
-                </div>
-              </div>
-
-              <div className='faq border-b border-stroke last-of-type:border-none'>
-                <button className='faq-btn relative flex w-full justify-between pt-6 pb-1 px-[18px] text-left text-base font-medium text-black  sm:px-[26px] sm:text-lg'>
-                  Do I need a TalentLayer platform Id?
-                </button>
-                <div className='pb-4 h-auto overflow-hidden px-[18px] sm:px-[26px]'>
-                  <p className='text-base text-body'>
-                    Yes it's better to mint your platformId, it will let you configure your
-                    platform, define fees and other important setup.{' '}
-                    <a className='underline' href='https://docs.talentlayer.org/get-a-platform-id'>
-                      See more here
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className='absolute right-0 -top-24 -z-10'>
-            <svg
-              width='95'
-              height='190'
-              viewBox='0 0 95 190'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'>
-              <circle cx='95' cy='95' r='77' stroke='url(#paint0_linear_49_603)' strokeWidth='36' />
-              <defs>
-                <linearGradient
-                  id='paint0_linear_49_603'
-                  x1='0'
-                  y1='0'
-                  x2='224.623'
-                  y2='130.324'
-                  gradientUnits='userSpaceOnUse'>
-                  <stop stopColor='#FF8FE8' />
-                  <stop offset='1' stopColor='#FFC960' />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className='absolute left-0 -bottom-24 -z-10'>
-            <svg
-              width='95'
-              height='190'
-              viewBox='0 0 95 190'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'>
-              <circle cy='95' r='77' stroke='url(#paint0_linear_52_83)' strokeWidth='36' />
-              <defs>
-                <linearGradient
-                  id='paint0_linear_52_83'
-                  x1='-117.84'
-                  y1='190'
-                  x2='117.828'
-                  y2='25.9199'
-                  gradientUnits='userSpaceOnUse'>
-                  <stop stopColor='#0f172a' />
-                  <stop stopColor='#FF8FE8' />
-                  <stop offset='1' stopColor='#FFC960' />
-                </linearGradient>
-              </defs>
-            </svg>
           </div>
         </section>
 
@@ -1083,12 +701,37 @@ function Home() {
               className='wow fadeInUp mx-auto mb-10 max-w-[690px] text-center'
               data-wow-delay='.2s'>
               <h2 className='mb-4 text-3xl font-bold text-black  sm:text-4xl md:text-[44px] md:leading-tight'>
-                Need any help?
+                get started with Proof of Picture today
               </h2>
-              <p className='text-base text-body'>
-                Please contact us on the hackhathon discords or direclty inside the dapp using xmtp
-                support conversation :)
+              <p className='text-base text-body mb-10'>
+                view the code on Github or use the demo applicaiton now
               </p>
+              <a
+                target='_blank'
+                href='https://github.com/orgs/Witness-Market/repositories'
+                className='mr-6 mb-6 inline-flex h-[60px] items-center rounded-lg bg-black py-[14px] px-[30px] text-white hover:bg-opacity-90'>
+                <span className='mr-[18px] border-r border-stroke border-opacity-40 pr-[18px] leading-relaxed '>
+                  View on Github
+                </span>
+                <span>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='24'
+                    height='24'
+                    viewBox='0 0 24 24'>
+                    <path
+                      fill='#FFF'
+                      d='M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z'
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a
+                target='_blank'
+                href='/dashboard'
+                className='mr-6 mb-6 inline-flex h-[60px] items-center rounded-lg bg-redpraha py-[14px] px-[30px] text-white hover:bg-opacity-90'>
+                Use the App
+              </a>
             </div>
           </div>
         </section>
@@ -1102,61 +745,6 @@ function Home() {
                 <p className='mt-4 text-center text-base text-white lg:mt-0 lg:text-left'>
                   &copy; 2023 Proof of Picture
                 </p>
-              </div>
-
-              <div className='w-full px-3 md:w-1/2 lg:w-1/3'>
-                <div className='mb-4 flex items-center justify-center space-x-5 md:mb-0 md:justify-start lg:justify-center'>
-                  <a
-                    href='https://twitter.com/TalentLayer'
-                    className='text-white opacity-70 hover:opacity-100'
-                    target='_blank'
-                    aria-label='social icon'>
-                    <svg
-                      width='24'
-                      height='24'
-                      viewBox='0 0 24 24'
-                      fill='none'
-                      xmlns='http://www.w3.org/2000/svg'>
-                      <g clipPath='url(#clip0_53_166)'>
-                        <path
-                          d='M22.162 5.65593C21.3986 5.99362 20.589 6.2154 19.76 6.31393C20.6337 5.79136 21.2877 4.96894 21.6 3.99993C20.78 4.48793 19.881 4.82993 18.944 5.01493C18.3146 4.34151 17.4804 3.89489 16.571 3.74451C15.6615 3.59413 14.7279 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0771 6.14972C11.6978 6.98983 11.6067 7.93171 11.818 8.82893C10.1551 8.74558 8.52833 8.31345 7.04329 7.56059C5.55824 6.80773 4.24813 5.75098 3.198 4.45893C2.82629 5.09738 2.63095 5.82315 2.632 6.56193C2.632 8.01193 3.37 9.29293 4.492 10.0429C3.82801 10.022 3.17863 9.84271 2.598 9.51993V9.57193C2.5982 10.5376 2.93237 11.4735 3.54385 12.221C4.15533 12.9684 5.00648 13.4814 5.953 13.6729C5.33661 13.84 4.69031 13.8646 4.063 13.7449C4.32987 14.5762 4.85001 15.3031 5.55059 15.824C6.25118 16.345 7.09713 16.6337 7.97 16.6499C7.10248 17.3313 6.10918 17.8349 5.04688 18.1321C3.98458 18.4293 2.87413 18.5142 1.779 18.3819C3.6907 19.6114 5.9161 20.2641 8.189 20.2619C15.882 20.2619 20.089 13.8889 20.089 8.36193C20.089 8.18193 20.084 7.99993 20.076 7.82193C20.8949 7.2301 21.6016 6.49695 22.163 5.65693L22.162 5.65593Z'
-                          fill='white'
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id='clip0_53_166'>
-                          <rect width='24' height='24' fill='white' />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-
-                  <a
-                    href='https://twitter.com/xmtp_'
-                    className='text-white opacity-70 hover:opacity-100'
-                    target='_blank'
-                    aria-label='social icon'
-                    style={{ transform: `rotateY(180deg)` }}>
-                    <svg
-                      width='24'
-                      height='24'
-                      viewBox='0 0 24 24'
-                      fill='none'
-                      xmlns='http://www.w3.org/2000/svg'>
-                      <g clipPath='url(#clip0_53_166)'>
-                        <path
-                          d='M22.162 5.65593C21.3986 5.99362 20.589 6.2154 19.76 6.31393C20.6337 5.79136 21.2877 4.96894 21.6 3.99993C20.78 4.48793 19.881 4.82993 18.944 5.01493C18.3146 4.34151 17.4804 3.89489 16.571 3.74451C15.6615 3.59413 14.7279 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0771 6.14972C11.6978 6.98983 11.6067 7.93171 11.818 8.82893C10.1551 8.74558 8.52833 8.31345 7.04329 7.56059C5.55824 6.80773 4.24813 5.75098 3.198 4.45893C2.82629 5.09738 2.63095 5.82315 2.632 6.56193C2.632 8.01193 3.37 9.29293 4.492 10.0429C3.82801 10.022 3.17863 9.84271 2.598 9.51993V9.57193C2.5982 10.5376 2.93237 11.4735 3.54385 12.221C4.15533 12.9684 5.00648 13.4814 5.953 13.6729C5.33661 13.84 4.69031 13.8646 4.063 13.7449C4.32987 14.5762 4.85001 15.3031 5.55059 15.824C6.25118 16.345 7.09713 16.6337 7.97 16.6499C7.10248 17.3313 6.10918 17.8349 5.04688 18.1321C3.98458 18.4293 2.87413 18.5142 1.779 18.3819C3.6907 19.6114 5.9161 20.2641 8.189 20.2619C15.882 20.2619 20.089 13.8889 20.089 8.36193C20.089 8.18193 20.084 7.99993 20.076 7.82193C20.8949 7.2301 21.6016 6.49695 22.163 5.65693L22.162 5.65593Z'
-                          fill='white'
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id='clip0_53_166'>
-                          <rect width='24' height='24' fill='white' />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
