@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import StarterKitContext from '../context/starterKit';
 import usePaymentsByService from '../hooks/usePaymentsByService';
 import useProposalsByService from '../hooks/useProposalsByService';
@@ -16,6 +16,9 @@ import ReviewItem from './ReviewItem';
 import ServiceStatus from './ServiceStatus';
 import Stars from './Stars';
 import { useChainId } from '../hooks/useChainId';
+import ImageUploadModal from './Modal/ImageUploadModal';
+import axios from 'axios';
+import C2PAImageDisplayWithURL from './C2PAImageDisplayWithURL';
 
 function ServiceDetail({ service }: { service: IService }) {
   const chainId = useChainId();
@@ -36,6 +39,19 @@ function ServiceDetail({ service }: { service: IService }) {
   const validatedProposal = proposals.find(proposal => {
     return proposal.status === ProposalStatusEnum.Validated;
   });
+
+  const [image, setImage] = useState();
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const { data } = await axios.get(`/api/getImage/${service.id}`);
+        setImage(data.imageURL);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
+  }, [service.id]);
 
   return (
     <>
@@ -90,16 +106,11 @@ function ServiceDetail({ service }: { service: IService }) {
                   )}
                 </p>
               )}
-              <p className='text-sm text-gray-400 mt-4'>
-                <strong>Keywords:</strong>{' '}
-                {service.description?.keywords_raw?.split(',').map((keyword, i) => (
-                  <span
-                    key={i}
-                    className='inline-block bg-gray-100 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2'>
-                    {keyword}
-                  </span>
-                ))}
-              </p>
+              {image && (
+                <p className='text-sm text-gray-400 mt-4'>
+                  <strong>Image:</strong> <C2PAImageDisplayWithURL imageURL={image} />
+                </p>
+              )}
             </div>
           </div>
 
@@ -129,6 +140,10 @@ function ServiceDetail({ service }: { service: IService }) {
               )}
             {account && service.status !== ServiceStatusEnum.Opened && (
               <PaymentModal service={service} payments={payments} isBuyer={isBuyer} />
+            )}
+
+            {account && service.status !== ServiceStatusEnum.Opened && (
+              <ImageUploadModal service={service} />
             )}
           </div>
         </div>
