@@ -2,6 +2,7 @@ import { ethers } from 'ethers';
 import { IToken, NetworkEnum } from './types';
 
 export type Config = {
+  name: string;
   networkId: NetworkEnum;
   subgraphUrl: string;
   escrowConfig: { [key: string]: any };
@@ -16,6 +17,7 @@ export const maxDecimals = {
 export const FEE_RATE_DIVIDER = 10_000;
 
 const mumbai: Config = {
+  name: 'mumbai',
   networkId: NetworkEnum.MUMBAI,
   subgraphUrl: 'https://api.thegraph.com/subgraphs/name/talentlayer/talent-layer-mumbai',
   contracts: {
@@ -48,6 +50,7 @@ const mumbai: Config = {
 };
 
 const local: Config = {
+  name: 'local',
   networkId: NetworkEnum.LOCAL,
   subgraphUrl: 'http://localhost:8020/',
   contracts: {
