@@ -470,13 +470,7 @@ function Home() {
                       Request Network
                     </h3>
                     <p className='text-base text-body'>
-                      All the code is fully open source, you can use it for any purposes,{' '}
-                      <a
-                        className='underline'
-                        target='_blank'
-                        href='https://docs.talentlayer.org/get-a-platform-id'>
-                        it's here
-                      </a>
+                      an ecosystem for interoperable financial services products
                     </p>
                   </div>
                 </div>
@@ -496,8 +490,7 @@ function Home() {
                       C2PA
                     </h3>
                     <p className='text-base text-body'>
-                      Setup your local environnement by copying the .env.example and adjust the
-                      variables
+                      a novel photograph verification standard developed by Sony, Adobe, and others
                     </p>
                   </div>
                 </div>
@@ -517,8 +510,47 @@ function Home() {
                       TalentLayer
                     </h3>
                     <p className='text-base text-body'>
-                      You can now start coding and improve the basic messaging system with your
-                      incredible features!
+                      an interoperable ecosystem of hiring platforms
+                    </p>
+                  </div>
+                </div>
+                <div className='w-full px-4 md:w-1/2 lg:w-1/3'>
+                  <div
+                    className='wow fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center'
+                    data-wow-delay='.4s'>
+                    <div className='mx-auto mb-8 flex h-[90px] w-[90px] items-center justify-center rounded-3xl bg-redpraha bg-opacity-20 text-redpraha duration-300 group-hover:bg-redpraha group-hover:text-white   '>
+                      <img
+                        src='/mantle-logo.webp'
+                        alt='author'
+                        className='h-full w-full object-cover object-center'
+                      />
+                    </div>
+                    <h3 className='mb-4 text-xl font-semibold text-black  sm:text-[22px] xl:text-[26px]'>
+                      Mantle
+                    </h3>
+                    <p className='text-base text-body'>
+                      an ETHereum rollup with fast payments - perfect for news agencies that need
+                      quick turn around on photos
+                    </p>
+                  </div>
+                </div>
+                <div className='w-full px-4 md:w-1/2 lg:w-1/3'>
+                  <div
+                    className='wow fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center'
+                    data-wow-delay='.4s'>
+                    <div className='mx-auto mb-8 flex h-[90px] w-[90px] items-center justify-center rounded-3xl bg-redpraha bg-opacity-20 text-redpraha duration-300 group-hover:bg-redpraha group-hover:text-white   '>
+                      <img
+                        src='/celo-logo.png'
+                        alt='author'
+                        className='h-full w-full object-cover object-center'
+                      />
+                    </div>
+                    <h3 className='mb-4 text-xl font-semibold text-black  sm:text-[22px] xl:text-[26px]'>
+                      Celo
+                    </h3>
+                    <p className='text-base text-body'>
+                      a carbon neutral blockchain, perfect for publications and photographers that
+                      want to preserve the environment
                     </p>
                   </div>
                 </div>
