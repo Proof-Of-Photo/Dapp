@@ -15,6 +15,7 @@ import { XmtpContextProvider } from '../modules/Messaging/context/XmtpContext';
 import { MessagingProvider } from '../modules/Messaging/context/messging';
 import '../styles/globals.css';
 import Layout from './Layout';
+import { C2paProvider } from '@contentauth/react';
 
 const chains: Chain[] = [customChains.polygonMumbai];
 
@@ -44,24 +45,30 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <DefaultSeo {...SEO} />
       <ToastContainer position='bottom-right' />
-      <WagmiConfig client={wagmiClient}>
-        <StarterKitProvider>
-          <XmtpContextProvider>
-            <MessagingProvider>
-              <ThemeProvider enableSystem={false}>
-                <Layout>
-                  <Component {...pageProps} />
-                </Layout>
-              </ThemeProvider>
-            </MessagingProvider>
-          </XmtpContextProvider>
-        </StarterKitProvider>
-        <Web3Modal
-          projectId={`${process.env.NEXT_PUBLIC_WALLECT_CONNECT_PROJECT_ID}`}
-          ethereumClient={ethereumClient}
-          accentColor='blackWhite'
-        />
-      </WagmiConfig>
+      <C2paProvider
+        config={{
+          wasmSrc: `/assets/toolkit_bg.wasm`,
+          workerSrc: `/assets/c2pa.worker.js`,
+        }}>
+        <WagmiConfig client={wagmiClient}>
+          <StarterKitProvider>
+            <XmtpContextProvider>
+              <MessagingProvider>
+                <ThemeProvider enableSystem={false}>
+                  <Layout>
+                    <Component {...pageProps} />
+                  </Layout>
+                </ThemeProvider>
+              </MessagingProvider>
+            </XmtpContextProvider>
+          </StarterKitProvider>
+          <Web3Modal
+            projectId={`${process.env.NEXT_PUBLIC_WALLECT_CONNECT_PROJECT_ID}`}
+            ethereumClient={ethereumClient}
+            accentColor='blackWhite'
+          />
+        </WagmiConfig>
+      </C2paProvider>
     </>
   );
 }
