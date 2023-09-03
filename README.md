@@ -1,46 +1,5 @@
-# StarterKit
+# Proof of Picture
 
-A Ready to Use NextJS dapp using TalentLayer & XMTP protocols.
-All essential components to start building an amazing dapp with interoperable work and messaging
+Proof of Picture is a marketplace where publications can ask for images, people can submit images that get verified as non-AI with novel C2PA technology. Photographers can earn from verified images they submit through pay-outs from publications. 
 
-## Start building in 60 seconds
-
-- Fork the code
-- Clone your new repository
-
-- Copy .env.example file into a new .env file
-- `cp .env.example .env`
-
-- If you are using nvm, run:
-- `nvm use`
-- Else, use the recommended node version: `18^`
-
--Install the dependencies
-- `npm install`
-
--Run local server for development
-- `npm run dev`
-
-## 🛠️ TalentLayer
-
-TalentLayer is an open protocol and dev toolkit for hiring applications. You can use it to build platforms that leverage a unified decentralized backend for job posts, escrow, user profiles, and reputations.
-
-### Developer Resources
-
-**Introduction:** [Read here.](https://docs.talentlayer.org/)
-
-**Documentation:** [Read here.](https://docs.talentlayer.org/technical-guides)
-
-**XMTP & TL:** [Read here.](https://docs.talentlayer.org/technical-guides/messaging/integrating-xmtp)
-
-## 🗨 XMTP
-
-XMTP is an open protocol and dev toolkit for messaging applications. You can use it to build peer-to-peer messaging 
-
-### Developer Resources
-
-**Introduction:** [Read here.](https://xmtp.org/docs/dev-concepts/introduction)
-
-**Documentation:** [Read here.](https://xmtp.org/docs/dev-concepts/start-building)
-
-**Example DAPP Tutorial:** [Read here.](https://xmtp.org/docs/client-sdk/javascript/tutorials/build-an-xmtp-hello-world-app)
+This is the frontend application for Proof of Photo. Please see the ReadMe in the organization page for more information.
